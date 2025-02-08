@@ -8,7 +8,7 @@ function App() {
 
   const handleSubmit = () => {
     axios
-      .post('http://localhost:3000/api/short', { originalUrl })
+      .post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/short`, { originalUrl })
       .then((res) => {
         setShortUrl(res.data.url.shortUrl);
         console.log("API response:", res.data.url.shortUrl);
@@ -33,7 +33,7 @@ function App() {
         {shortUrl && (
           <div className="short-url-container">
             <p>Shortened URL:</p>
-            <a href={`http://localhost:3000/${shortUrl}`} target="_blank" rel="noopener noreferrer">
+            <a href={`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/${shortUrl}`} target="_blank" rel="noopener noreferrer">
               {shortUrl}
             </a>
           </div>
