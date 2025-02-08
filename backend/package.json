@@ -12,11 +12,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^6.0.12",
-    "nanoid": "^3.3.4",
-    "dotenv": "^10.0.0",
     "cors": "^2.8.5",
-    "@vercel/node": "^2.9.1"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "nanoid": "^5.0.9"
   }
 }
